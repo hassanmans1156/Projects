@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Itim', cursive;
+}
+.container{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width:100%;
+    height:100vh;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: black;
+    
+    
+}
+.box .images{
+    display: flex;
+    gap:20px;
+    justify-content: space-between;
+    margin:20px;
+    
+}
+.box .images img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    cursor: pointer;
+}
+.box .results{
+    margin:10px;
+}
+.box .Button{
+    margin-top:30px;
+}
+.box .Button button{
+    padding:10px 40px;
+    background:gold;
+    color:black;
+    cursor:pointer;
+    border-radius: 15px;
+    font-weight:bold;
+    font-size: 20px;
+    border: none;
+    transition: 0.5s ease;
+}
+.box .Button button:hover{
+    box-shadow: 0 0 10px gold;
+}
+.Choices .Player,.Choices .Computer{
+    font-weight: bold;
+    color:white;
+}
+.PlayRes{
+    color:lightgreen;
+}
+.CompRes{
+    color:red;
+}
+.Results{
+    margin:10px;
+}
+.Results .PlayerWin{
+    background:rgb(144, 238, 144);
+    color:green;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding:0 5px;
+    opacity: 0;
+    transition:.5s ease;
+}
+.Results .ComputerWin{
+    background:rgb(255, 218, 185);
+    color:red;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding:0 5px;
+    opacity: 0;
+    transition:.5s ease;
+}
+.Results .Draw{
+    background:rgb(230, 230, 250);
+    color:gray;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding:0 5px;
+    opacity: 0;
+    transition:.5s ease;
+}
+.Score .Player,.Score .Computer{
+    color:white;
+}
