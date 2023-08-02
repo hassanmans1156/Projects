@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    width:300px;
+    height:300px;
+       
+}
+.circle{
+    position: relative;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #333 inset;
+    border:8px solid black;
+}
+.point{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background:rgba(189, 195, 199);
+    box-shadow: 0 0 2px #333 inset;
+    border-radius: 50%;
+    width:15px;
+    height:15px;
+}
+.numbers span{
+    font-weight: 500;
+    font-size: 40px;
+}
+.twelve{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%,0);
+}
+.six{
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translate(-50%,0);
+}
+.three{
+    position: absolute;
+    top:50%;
+    right:10px;
+    transform: translate(-10px,-50%);
+}
+.nine{
+    position: absolute;
+    top: 50%;
+    left:15px;
+    transform:translate(0,-50%) ;
+}
+.one{
+    position: absolute;
+    top:20px;
+    right:75px;
+}
+.two{
+    position: absolute;
+    top:65px;
+    right:37px;
+}
+.five{
+    position: absolute;
+    bottom:20px;
+    right:80px;
+}
+.four{
+    position: absolute;
+    bottom:60px;
+    right:37px;
+}
+
+.seven{
+    position: absolute;
+    bottom:20px;
+    left:80px;
+}
+.eight{
+    position: absolute;
+    bottom:65px;
+    left:37px;
+}
+.eleven{
+    position: absolute;
+    top:20px;
+    left:65px;
+}
+.ten{
+    position: absolute;
+    top:70px;
+    left:25px;
+}
+.secondWise{
+    position: absolute;
+    bottom:50%;
+    left:50%;
+    background:red;
+    height:120px;
+    width:8px;
+    z-index:-1;
+    transform: translate(-50%,0);
+    transform-origin: bottom center;
+    clip-path: polygon(50% 0,50% 0,0% 100%,100% 100%);
+    
+}
+.hourWise{
+    position: absolute;
+    bottom:50%;
+    left:50%;
+    background:#DFDFDF;
+    height:80px;
+    width:8px;
+    z-index:-1;
+    transform: translate(-50%,0);
+    transform-origin: bottom center;
+    clip-path: polygon(50% 0,50% 0,0% 100%,100% 100%);
+     
+}
+.minuteWise{
+    position: absolute;
+    bottom:50%;
+    left:50%;
+    background:black;
+    height:130px;
+    width:8px;
+    z-index:-1;
+    transform: translate(-50%,0);
+    transform-origin: bottom center;
+    clip-path: polygon(50% 0,50% 0,0% 100%,100% 100%);
+    
+     
+}
