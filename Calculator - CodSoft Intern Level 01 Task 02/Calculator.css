@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+section{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    width:400px;
+    height:500px;
+    background:#000;
+    border-radius: 10px;
+    position: relative;
+    
+}
+input{
+    position: absolute;
+    padding: 0 5px;
+    top:60px;
+    margin-left:5%;
+    width:90%;
+    font-size: 50px;
+    text-align: right;
+    background:#fff;
+    border:none;
+    border-radius: 10px;
+    color:#000;
+}
+.calculator h1{
+    color:#fff;
+    text-align: center;
+    margin-top: 10px;
+}
+.btns{
+    position:absolute;
+    top:180px;
+    width:90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.btns .column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+.btns button{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    transition: .2s ease;
+}
+
+.btns .column-4 button{
+    background: orange;
+    color:#fff;
+}
+.btns .column .grey{
+    background:gray;
+}
+.btns .column .grey:hover{
+    box-shadow: inset 0 0 15px #fff;
+}
+.btns .operations:hover{
+    box-shadow: inset 0 0 15px #fff;
+}
+.btns .num:hover{
+    box-shadow: inset 0 0 10px #000;
+}
