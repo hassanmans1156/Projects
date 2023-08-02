@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dosis:wght@200;300;400;500;700&family=Itim&family=Lobster&family=Merriweather+Sans:wght@400;600;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Credit | Card</title>
+    <link rel="stylesheet" href="Visa Card.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="topic">
+                <div class="front">
+                    <div class="row-1">
+                        <img class="img-1" src="VisaSim.jpg" alt="Sim">
+                        <img class="img-2" src="VisaLogo.jpg" alt="Logo">
+                    </div>
+                    <div class="row-2">
+                        <input type="text" class="CNum">
+                    </div>
+                    <div class="row-3">
+                        <div class="holder">
+                            <label>Card Holder:</label>
+                            <p class="CName">Full Name</p>
+                        </div>
+                        <div class="edate">
+                            <label>Exp Date:</label>
+                            <p><span class="CMonth">MM</span> / <span class="CYear">YY</span></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="BlackLine"></div>
+                    <div class="Code">
+                        <label>CVV</label>
+                        <input type="password" class="BackCode">
+                    </div>
+                    <div class="image">
+                        <img src="VisaLogo.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="inputs">
+            <div class="content">
+                <div class="cardNum">
+                    <label>Card Number:</label>
+                    <input type="text" class="INumber">
+                </div>
+                <div class="cardHolder">
+                    <label>Card Holder:</label>
+                    <input type="text" class="IHolder">
+                </div>
+                <div class="date">
+                    <label>Expiration Date:</label>
+                    <div class="expDate">
+                    <div class="select-1">
+                        <select class="SMonth">
+                            <option>Month</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                    </div>
+                    <div class="select-2">
+                        <select class="SYear">
+                            <option>Year</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                            <option>2029</option>
+                            <option>2030</option>
+                            <option>2031</option>
+                            <option>2032</option>
+                            <option>2033</option>
+                            <option>2034</option>
+                        </select>
+                    </div>
+                    <div class="input-3">
+                        <label>CVV</label>
+                        <input type="number" class="ICode">
+                    </div>
+                    </div>
+                </div>
+                <div class="Button">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="Payment.js"></script>
+</html>
