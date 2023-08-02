@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile | Shop</title>
+    <link rel="stylesheet" href="CRUDS Shop.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Electronics</h1>
+            <p>Shop System</p>
+        </div>
+        <div class="inputs">
+            <input type="text" id="title" placeholder="Title">
+            <div class="price">
+                <input onkeyup="getTotal()"type="number" id="price" placeholder="Price">
+                <input onkeyup="getTotal()"type="number" id="tax" placeholder="Tax">
+                <input onkeyup="getTotal()"type="number" id="ads" placeholder="Ads">
+                <input onkeyup="getTotal()"type="number" id="discount" placeholder="Discount">
+                <span id="total"></span>
+            </div>
+            <input type="text" id="count" placeholder="Count">
+            <input type="text" id="category" placeholder="Category">
+            <button id="createBtn">Create</button>
+            <div id="deleteBtn"></div>
+            <button onclick="UpdateData()" id="updateBtn">Update</button>
+            <input type="text" id="search" placeholder="Search">
+            <div class="search">
+                <button onclick="SearchTitle()" id="SearchBtn">Search by Title</button>
+                <button onclick="SearchCategory()" id="SearchBtn">Search by Category</button>
+            </div>
+            
+        </div>
+        <div class="output">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Ads</th>
+                    <th>Tax</th>
+                    <th>Discount</th>
+                    <th>Total</th>
+                    <th>Category</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="CRUDS Shop.js">
+   
+
+</script>
+</html>

@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    transition: .5s ease;
+    box-sizing: border-box;
+    font-weight:bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background:#333;
+}
+.container{
+    width:80%;
+    margin: 30px 0 0 10%;
+    
+}
+.header{
+    color:#fff;
+    text-align:center;
+    text-transform: uppercase;
+}
+.inputs{
+    margin-top:20px;
+}
+input{
+    width:100%;
+    padding:8px;
+    border:none;
+    background:#222;
+    border-radius: 8px;
+    color:#fff;
+    outline:none;
+    margin:8px 5px;
+}
+input:focus{
+    background: #111;
+    transform: scale(1.1);
+}
+.inputs .price input{
+    width:20%;
+}
+.price #total{
+    background:#f00;
+    color:#fff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+.price #total::before{
+    content:'Total : '
+}
+button{
+    width:100%;
+    background:#7D3C98;
+    color:#fff;
+    border:none;
+    outline:none;
+    padding:8px;
+    margin:5px 0;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor:pointer;
+}
+button:hover{
+    background:#884EA0;
+    letter-spacing:1px;
+}
+.output{
+    margin:10px 0;
+}
+.output table{
+    width:100%;
+}
+table th,td{
+    text-align: center;
+    padding:5px;
+}
+table td{
+    color:#85C1E9;
+}
+.output table th{
+    color:#fff;
+}
+#updateBtn{
+    display: none;
+}
+::-webkit-scrollbar{
+
+background:transparent;
+width:15px;
+
+}
+::-webkit-scrollbar-thumb{
+background:#7D3C98;
+}
+.search{
+display: flex;
+justify-content: space-between;
+}
+.search button{
+width:45%;
+}
