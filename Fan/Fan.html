@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan</title>
+    <link rel="stylesheet" href="Fan.css">
+</head>
+<body>
+    <audio src="FanVoice.mp3"></audio>
+    <div class="container">
+
+        <div class="fan">
+            <div class="ball"></div>
+            <div class="blades">
+                <div class="blade-1"></div>
+                <div class="blade-2"></div>
+                <div class="blade-3"></div>
+                <div class="blade-4"></div>
+            </div>
+        </div>
+
+        <div class="stick"></div>
+        <div class="base"></div>
+
+        <div class="on-off">
+            <div class="remote">
+                <div class="start-stop">
+                    <div class="on work">
+                        <button onclick="On()"></button>
+                    </div>
+                    <div class="off work">
+                        <button onclick="Off()"></button>
+                    </div>
+                </div>
+                <div class="speed">
+                    <div class="speed-1 fast">
+                        <button onclick="One()">1</button>
+                    </div>
+                    <div class="speed-2 fast">
+                        <button onclick="Two()">2</button>
+                    </div>
+                    <div class="speed-3 fast">
+                        <button onclick="Three()">3</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+    
+</body>
+<script src="Fan.js"></script>
+</html>
