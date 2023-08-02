@@ -1,0 +1,364 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* Header 1 CSS */
+header{
+    width:100%;
+    height: 60px;
+    background:linear-gradient(to right,orange,#FF00D4);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;	
+
+}
+.button a{
+    border:2px solid #fff;
+    font-size: 14px;
+    background:transparent;
+    padding:8px;
+    color:#fff;
+    text-transform: uppercase;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: .5s ease;
+}
+.button a:hover{
+    background:rgba(256, 256, 256, 0.6);
+}
+.platforms i{
+    margin-left:10px;
+    position: relative;
+    color:#fff;
+}
+ .platforms i::after {
+    content:'';
+    position: absolute;
+    right:-8px;
+    top:-25px;
+    background:#fff;
+    width:2px;
+    height:60px;
+}
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    font-size: 14px;
+}
+.contact i{
+    color:#fff;
+}
+.contact span{
+    color:#fff;
+}
+.contact .phone{
+    padding-right:5px;
+    border-right:2px solid #fff ;
+}
+/* Header 2 CSS */
+.header-2{
+    position: sticky;
+    text-transform: uppercase;
+    font-weight:bold;
+    background:#fff;
+    width:100%;
+    height:60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-2 .navigation-links{
+    font-size: 14px;
+    
+
+}
+.header-2 .navigation-links a{
+    padding:22px 10px;
+    margin-left:8px;
+    
+}
+.header-2 .navigation-links a:hover{
+    background:orange;
+}
+.header-2 .main-link{
+    font-size:20px;
+}
+.header-2 a{
+    text-decoration: none;
+    color:#000;
+    font-weight:bold;
+}
+.search-bar{
+    background:#000;
+    height:100%;
+    display: flex;
+    align-items: center;
+    padding:5px;
+    cursor: pointer;
+
+}
+.search-bar i{
+    color:#fff;
+
+}
+.search-bar input{
+    display: none;
+    margin-left: 5px;
+    border-radius: 10px;
+    padding:5px;
+    border:none;
+    outline:none;
+}
+/* Section 1 CSS */
+.section-1{
+    width:100%;
+    height:450px;
+    position: relative;
+}
+.section-1 .wallpaper{
+    width:100%;
+    height:100%;
+}
+.section-1 .cover{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.5);
+}
+/* Section 2 CSS */
+.section-2{
+    width:100%;
+    height:200px;
+    background:linear-gradient(to right,orange,#FF00D4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2 .f-column,.s-column,.t-column{
+    width:25%;
+}
+.section-2 .column i {
+    padding:8px;
+    border:2px solid #fff;
+    border-radius:50%;
+}
+.section-2 .column{
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    
+}
+.section-2 .column .text{
+    font-size: 12px;
+}
+.section-2 .column .f-line{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+.section-2 .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* Section 3 CSS */
+.section-3{
+    width:100%;
+    height:500px;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-3 .content{
+    display: flex;
+    justify-content: space-around;
+}
+.section-3 .content .f-column{
+    width:40%;
+}
+.section-3 .content .f-column h4{
+    margin:8px 0;
+}
+.section-3 .content .f-column h3{
+    position:relative;
+}
+.section-3 .content .f-column h3::before{
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:50px;
+    height:2px;
+    background:linear-gradient(to right,orange,#FF00D4);
+}
+.section-3 .content .f-column p{
+    font-weight: 200;
+}
+.section-3 .content .f-column .btn{
+    margin-top: 20px;
+}
+.section-3 .content .f-column a{
+    text-decoration: none;
+    padding:10px 15px;
+    border-radius: 20px;
+    color:#fff;
+    margin-top:70px;
+    background:linear-gradient(to right,orange,#FF00D4);
+}
+.section-3 .content .s-column{
+    width:30%;
+}
+.section-3 .content .s-column img{
+    width:100%;
+    height:300px;
+    border-radius: 50px;
+}
+/* Section 4 CSS */
+.section-4{
+    width:100%;
+    height:350px;
+    background:#F2F3F4 ;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.section-4 .content{
+    width:80%;
+    margin-left:10%;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.section-4 .content .cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+
+}
+.section-4 .content h3{
+    position:relative;
+}
+.section-4 .content  h3::before{
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:80px;
+    height:2px;
+    background:linear-gradient(to right,orange,#FF00D4);
+}
+.section-4 .content .card-1{
+    width:25%;
+    height:200px;
+    position:relative;
+}
+.section-4 .content .card-1 .info{
+    position: absolute;
+    bottom:-10px;
+    right:0;
+    background:#fff;
+    width:80%;
+    text-align: center;
+    padding:8px;
+    box-shadow: 0 0 5px #BDC3C7;
+}
+.section-4 .content .card-1 .info .icon{
+    position: absolute;
+    left:-15px;
+    top:-3px;
+    width:40px;
+    height:40px;
+    border-radius: 20px;
+    color:#fff;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right,orange,#FF00D4);
+    
+}
+.section-4 .content .card-1 img{
+    width:100%;
+    height:100%;
+}
+
+.section-4 .content .card-2{
+    width:25%;
+    height:200px;
+    position:relative;
+}
+.section-4 .content .card-2 .info{
+    position: absolute;
+    bottom:-10px;
+    right:0;
+    background:#fff;
+    width:80%;
+    text-align: center;
+    padding:8px;
+    box-shadow: 0 0 5px #BDC3C7;
+}
+.section-4 .content .card-2 .info .icon{
+    position: absolute;
+    left:-15px;
+    top:-3px;
+    width:40px;
+    height:40px;
+    border-radius: 20px;
+    color:#fff;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right,orange,#FF00D4);
+    
+}
+.section-4 .content .card-2 img{
+    width:100%;
+    height:100%;
+}
+
+
+.section-4 .content .card-3{
+    width:25%;
+    height:200px;
+    position:relative;
+}
+.section-4 .content .card-3 .info{
+    position: absolute;
+    bottom:-10px;
+    right:0;
+    background:#fff;
+    width:80%;
+    text-align: center;
+    padding:8px;
+    box-shadow: 0 0 5px #BDC3C7;
+}
+.section-4 .content .card-3 .info .icon{
+    position: absolute;
+    left:-15px;
+    top:-3px;
+    width:40px;
+    height:40px;
+    border-radius: 20px;
+    color:#fff;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right,orange,#FF00D4);
+    
+}
+.section-4 .content .card-3 img{
+    width:100%;
+    height:100%;
+}
