@@ -1,0 +1,724 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+/* Header */
+header{
+    position: fixed;
+    width:100%;
+    height:50px;
+    z-index:999;
+    background:#3498D8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 10px;
+}
+header .Main-link img{
+    width:40px;
+    height:40px;
+    margin-left:20px;
+    border-radius: 50%;
+}
+header .Main-link a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+header .Main-link{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+header .links{
+    display: flex;
+    gap:30px;
+    margin-right: 60px;
+}
+header .links a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+    padding:8px;
+    border-radius: 8px;
+    transition:.5s ease;
+    
+}
+header .links a:hover{
+    background:rgba(255,255,255,0.5);
+}
+
+/* Section Home */
+.home{
+    width:100%;
+    height:500px;
+    background:#F5F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 60px 60px;
+}
+.home .content{
+    width:90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:50px;
+}
+.home .content img{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+}
+.home .content .info{
+    width:50%;
+}
+.home .content .info p{
+    line-height: 40px;
+}
+.home .content .info h1{
+    font-size: 40px;
+    color:#3498D8;
+    margin:10px 0;
+    position: relative;
+    display: inline-block;
+}
+.home .content .info h1::before{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    width:100%;
+    height:100%;
+    background:#F5F2F2;
+    animation: slide 3s infinite alternate backwards ;
+}
+@keyframes slide {
+    0%{
+        width:100%;
+    }
+    100%{
+        width:0%;
+    }
+}
+
+
+
+/* Section Skills */
+.skills-section{
+    
+    width:100%;
+    height:200px ;
+    background:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.skills-section h1{
+    font-size: 30px;
+}
+.skills{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    margin-top: 20px;
+}
+.skills .Skill{
+    width:80px;
+    height:80px;
+    font-size:12px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    position:relative;
+    overflow: hidden;
+
+}
+.SkillName,.SkillLevel{
+    z-index:999;
+}
+.HTMLBack{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:0;
+    background:#FFAA00;
+    transition: 10s ease;
+    
+}
+.CSSBack{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:0;
+    background:#3498D8;
+    transition: 10s ease;
+
+}
+.JAVASCRIPTBack{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:0;
+    background:#dce21a;
+    transition: 10s ease;
+
+}
+.PHPBack{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:0;
+    background:#8500FF;
+    transition: 10s ease;
+
+}
+.JQUERYBack{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:0;
+    background:#0f8b24;
+    transition: 10s ease;
+
+}
+.JAVABack{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:0;
+    background:#ff0000;
+    transition: 10s ease;
+
+}
+.CBack{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:0;
+    background:#006eff;
+    transition: 10s ease;
+
+}
+
+.BOOTSTRAPBack{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:0;
+    background:#ff00ea;
+    transition: 10s ease;
+}
+
+/* Section Projects */
+.Projects{
+    width:100%;
+    height:100vh;
+    background:#f2f2f2;
+    border-radius: 50px 50px 0 0;
+    
+}
+.Projects .section-title{
+    text-align: center;
+    padding:20px 0;
+    font-size: 30px;
+
+        }
+.Projects .content{
+    width:80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:20px;
+    padding-top:30px;
+    
+}
+
+/* Restaurant Project CSS */
+.Projects .content .Restaurant-Website{
+    margin-top: 5px;
+    width:800px;
+    height:200px;
+    background: #3498D8;
+    display: flex;
+    border-radius: 10px;
+}
+.Projects .content .Restaurant-Website .image{
+    width:50%;
+    height:100%;
+    position: relative;
+}
+
+.Projects .content .Restaurant-Website .image .restaurant-right-arrow{
+    position: absolute;
+    top:50%;
+    right:10px;
+    background:#000;
+    width:25px;
+    height:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s ease;
+    
+    
+}
+.Projects .content .Restaurant-Website .image .restaurant-right-arrow:hover{
+   background:#fff;
+   
+    
+}
+.Projects .content .Restaurant-Website .image .restaurant-right-arrow:hover i{
+  color:#000;
+   
+    
+}
+.Projects .content .Restaurant-Website .image  i{
+   color:#fff;
+   transition: .5s ease;
+    
+}
+.Projects .content .Restaurant-Website .image .restaurant-left-arrow{
+    position: absolute;
+    top:50%;
+    left:10px;
+    background:#000;
+    width:25px;
+    height:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s ease;
+    
+    
+}
+.Projects .content .Restaurant-Website .image .restaurant-left-arrow:hover{
+   background:#fff;
+   
+    
+}
+.Projects .content .Restaurant-Website .image .restaurant-left-arrow:hover i{
+  color:#000;
+   
+    
+}
+.Projects .content .Restaurant-Website .image  i{
+   color:#fff;
+   transition: .5s ease;
+    
+}
+.Projects .content .Restaurant-Website .image img{
+    width:100%;
+    height:100%;
+    border-radius: 10px 0 0 10px;
+}
+.Projects .content .Restaurant-Website .info{
+    width:50%;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color:#fff;
+}
+.Projects .content .Restaurant-Website .info .restaurant-website-description{
+   text-align: center;
+   font-size: 14px;
+}
+
+
+/* School Project CSS */
+.Projects .content .School-Website{
+    
+    width:45%;
+    height:200px;
+    background: #3498D8;
+    display: flex;
+    border-radius: 10px;
+}
+.Projects .content .School-Website .image{
+    width:50%;
+    height:100%;
+    position: relative;
+}
+
+.Projects .content .School-Website .image .school-right-arrow{
+    position: absolute;
+    top:50%;
+    right:10px;
+    background:#000;
+    width:25px;
+    height:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s ease;
+    
+    
+}
+.Projects .content .School-Website .image .school-right-arrow:hover{
+   background:#fff;
+   
+    
+}
+.Projects .content .School-Website .image .school-right-arrow:hover i{
+  color:#000;
+   
+    
+}
+.Projects .content .School-Website .image  i{
+   color:#fff;
+   transition: .5s ease;
+    
+}
+.Projects .content .School-Website .image .school-left-arrow{
+    position: absolute;
+    top:50%;
+    left:10px;
+    background:#000;
+    width:25px;
+    height:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s ease;
+    
+    
+}
+.Projects .content .School-Website .image .school-left-arrow:hover{
+   background:#fff;
+   
+    
+}
+.Projects .content .School-Website .image .school-left-arrow:hover i{
+  color:#000;
+   
+    
+}
+.Projects .content .School-Website .image  i{
+   color:#fff;
+   transition: .5s ease;
+    
+}
+.Projects .content .School-Website .image img{
+    width:100%;
+    height:100%;
+    border-radius: 10px 0 0 10px;
+}
+.Projects .content .School-Website .info{
+    width:50%;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color:#fff;
+}
+.Projects .content .School-Website .info .school-website-description{
+   text-align: center;
+   font-size: 14px;
+}
+
+/* Film Project CSS */
+.Projects .content .Film-Website{
+    
+    width: 45%;
+    height:200px;
+    background: #3498D8;
+    display: flex;
+    border-radius: 10px;
+}
+.Projects .content .Film-Website .image{
+    width:50%;
+    height:100%;
+    position: relative;
+}
+
+.Projects .content .Film-Website .image .film-right-arrow{
+    position: absolute;
+    top:50%;
+    right:10px;
+    background:#000;
+    width:25px;
+    height:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s ease;
+    
+    
+}
+.Projects .content .Film-Website .image .film-right-arrow:hover{
+   background:#fff;
+   
+    
+}
+.Projects .content .Film-Website .image .film-right-arrow:hover i{
+  color:#000;
+   
+    
+}
+.Projects .content .Film-Website .image  i{
+   color:#fff;
+   transition: .5s ease;
+    
+}
+.Projects .content .Film-Website .image .film-left-arrow{
+    position: absolute;
+    top:50%;
+    left:10px;
+    background:#000;
+    width:25px;
+    height:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s ease;
+    
+    
+}
+.Projects .content .Film-Website .image .film-left-arrow:hover{
+   background:#fff;
+   
+    
+}
+.Projects .content .Film-Website .image .film-left-arrow:hover i{
+  color:#000;
+   
+    
+}
+.Projects .content .Film-Website .image  i{
+   color:#fff;
+   transition: .5s ease;
+    
+}
+.Projects .content .Film-Website .image img{
+    width:100%;
+    height:100%;
+    border-radius: 10px 0 0 10px;
+}
+.Projects .content .Film-Website .info{
+    width:50%;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color:#fff;
+}
+.Projects .content .Film-Website .info .film-website-description{
+   text-align: center;
+   font-size: 14px;
+}
+
+
+/* Section About */
+.about{
+    width:100%;
+    height:250px;
+    border-radius: 60px 60px 0 0;
+    padding:30px;
+    
+}
+.about h1{
+    font-size: 30px;
+    text-align: center;
+}
+.about .content{
+    width:80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about .content .sites{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.about .content .sites a{
+    color:#000;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left:15px;
+    
+}
+.about .content .sites .Facebook-link i{
+    color:#3498D8;
+    font-size:30px;
+}
+.about .content .sites .Linkedin-link i{
+    color:#3498D8;
+    font-size:30px;
+}
+.about .content .sites .Github-link i{
+    color:#000;
+    font-size:30px;
+}
+.about .content .CV a{
+    background:red;
+    color:#fff;
+    font-weight: bold;
+    padding:10px;
+    text-decoration: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition:.5s ease;
+    border:2px solid red;
+}
+.about .content .CV a:hover{
+    background:#fff;
+    color:red;
+}
+
+
+/* Footer */
+.footer{
+    
+    width:100%;
+    height:70px;
+    background-color:#3498D8;;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.FooterContent{
+    width:80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.FooterContent .firstSide{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+.FooterContent .firstSide .callIcon{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    border-radius: 50%;
+    color:#3498D8;
+}
+.FooterContent .title{
+    font-weight: bold;
+}
+.FooterContent .firstSide .callNumbers{
+    color:#fff;
+    font-size:12px;
+}
+
+.FooterContent .secondSide{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+.FooterContent .secondSide .mailIcon{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    border-radius: 50%;
+    color:#3498D8;
+}
+.FooterContent .title{
+    font-weight: bold;
+}
+.FooterContent .secondSide .Email{
+    color:#fff;
+    font-size:12px;
+}
+/* Third Side    */
+.FooterContent .thirdSide{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+.FooterContent .thirdSide .addIcon{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    border-radius: 50%;
+    color:#3498D8;
+}
+.FooterContent .thirdSide .Platforms .title{
+    font-size: 12px;
+    color:#fff;
+}
+.FooterContent .fourthSide{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+.FooterContent .fourthSide .copyRightIcon{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:8px;
+    color:#3498D8;
+    border-radius: 50%;
+
+}
+.FooterContent .fourthSide .copyRightIcon i{
+    font-size: 20px;
+}
+.FooterContent .title{
+    font-weight: bold;
+}
+.FooterContent .fourthSide .developed{
+    color:#fff;
+    font-size:12px;
+}
+.Platforms .fa-brands{
+    color:#fff;
+
+}
+.platformIcons{
+    display: flex;
+    gap:8px;
+}
